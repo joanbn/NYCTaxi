@@ -4,5 +4,5 @@
 /docs/*docx
 
 # Byte-compiled / optimized / DLL files
-__pycache__/
+/notebooks/__pycache__/
 *.py[cod]
