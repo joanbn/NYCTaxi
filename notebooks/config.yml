@@ -1,0 +1,20 @@
+# extraction configuration
+extraction:
+  yellow_taxi:        
+    file_name: yellow_tripdata_$YEAR-$MONTH.parquet
+    url: https://s3.amazonaws.com/nyc-tlc/trip+data/
+    years: [2017]    
+    # months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] 
+    months: [1, 3, 6, 9, 11, 12] # NOTE: getting all months gives spark problems   
+    sample_fraction: 0.1 # we add this fraction or we get spark problems
+    # months: [3, 6, 11]    
+    local_folder: /data/taxi/
+  zones_table:
+    file_name: taxi+_zone_lookup.csv
+    url: https://s3.amazonaws.com/nyc-tlc/misc/
+    local_folder: /data/zones/
+  zones_shapefile:
+    file_name: taxi_zones.zip
+    file_name_wo_extension: taxi_zones
+    url: https://s3.amazonaws.com/nyc-tlc/misc/
+    local_folder: /data/shapefiles/
