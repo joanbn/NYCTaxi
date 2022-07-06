@@ -1,27 +1,16 @@
 NYC Taxi
 ==============================
 
-Description
-
 ## Project Organization
+    
 
-    .        
-    ├── LICENSE
-    ├── README.md        
-    ├── config
-    ├── data    
-    ├── docs
-    ├── notebooks
-    ├── reports    
-    └── src        
+## Data Extraction
 
-## Extraction
 
-ds
 
-## Processing
+## Data Processing
 
-fasdfas
 
-## Modeling
+
+## Data Modeling
 
