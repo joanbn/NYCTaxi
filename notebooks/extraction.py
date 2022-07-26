@@ -92,6 +92,6 @@ def get_zones_shapefile(cfg):
         print(f"Unzipping file: {file_name}")        
         with zipfile.ZipFile(local_file,"r") as zip_ref:
             zip_ref.extractall(local_folder_shp)
-    
+               
     return gpd.read_file(local_file_shp)
     
